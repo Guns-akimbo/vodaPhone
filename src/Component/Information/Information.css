@@ -1,0 +1,103 @@
+.bigCardContainer { 
+    width: 100%; 
+    height: max-content; 
+    display: flex; 
+    justify-content: center;
+     background-color: black; 
+    } 
+    
+.bigCardWrapper { 
+    width: 80%; 
+    height: 48vh; 
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+    padding-inline-start: 15px; 
+    background-color: #000000; 
+} 
+.bigCardLeft { 
+    width: 33%; 
+    height: 54vh; 
+    background-color: black;
+     z-index: 1; 
+    } 
+.bigCardLeft img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+} 
+.bigCardRight { 
+    width: 67%;
+     height: 100%; 
+     color: #fff; 
+     display: flex; 
+     gap: 6px; 
+     justify-self: flex-end; 
+     justify-content: center; 
+     flex-direction: column; 
+     background-color: black;
+    } 
+    .btn-Voda{
+         width: max-content;
+          border: none; 
+          border-radius: 6px;
+           padding: 10px; 
+           background-color: #007c92; 
+           color: #fff; 
+           font-weight: 700;
+         }
+ .big-p{ 
+    font-size: 30px; 
+    margin: 5px 0px 5px 0px; 
+    font-weight: 400; 
+    background-color: #000000;
+} 
+.small-p{ 
+    width: 80%; 
+    font-size: 14px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    background-color: #000000;
+} 
+.firstSpan{ 
+    font-size: 12px; 
+    font-weight: 400; 
+    line-height: 18px; 
+    color: rgb(153, 153, 153); 
+}
+ .cardTextHolder{ 
+    width: max-content;
+     display: flex; 
+     flex-direction: column; 
+     background-color: #000000;
+    } 
+.strokedText{ 
+    font-size: 16px; 
+    font-weight: 700; 
+    line-height: 14px; 
+    color: rgb(235, 0, 0);
+     display: flex; 
+     align-self: flex-end; 
+     text-decoration: line-through;
+     background-color: #000000;
+ } 
+ .monatlich{ 
+    font-size: 16px; 
+    font-weight: 400; 
+    background-color: #000000;
+
+} 
+.secondSpan{ 
+    font-size: 34px; 
+    font-weight: 700; 
+    line-height: 51px; 
+    background-color: #000000;
+} 
+.Jetzt{ 
+    display: flex; 
+    align-items: center;
+     gap: 5px; 
+     font-size: 16px; 
+     font-weight: 700; 
+     background-color: #000000;
+}

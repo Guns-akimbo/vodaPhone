@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.fragenHolder{
+    width: 100%;
+    height: 25vh;
+    background-color: #212121;
+    display: flex;
+    margin-top: 2%;
+}
+.fragenWrap{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.fragenWrap h1{
+    Font-size: 32px;
+    Font-weight: 400;
+    Line-height: 37.056px;
+    color: rgb(255, 255, 255);
+}
+
+.paragraph{
+    display:flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.paragraph p{
+    Font-size: 16px;
+    Font-weight: 700;
+    Line-height: 28.8px;
+    color: rgb(255, 255, 255);
+}
