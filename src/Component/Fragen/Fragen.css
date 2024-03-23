@@ -7,10 +7,11 @@
 
 .fragenHolder{
     width: 100%;
-    height: 25vh;
+    height: 29vh;
     background-color: #212121;
     display: flex;
-    margin-top: 2%;
+    /* margin-top: 5%; */
+    
 }
 .fragenWrap{
     width: 90%;
@@ -20,6 +21,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-top: 2%;
 }
 
 
@@ -32,7 +34,7 @@
 
 .paragraph{
     display:flex;
-    gap: 2px;
+    /* gap: 2px; */
     align-items: center;
 }
 
@@ -40,5 +42,5 @@
     Font-size: 16px;
     Font-weight: 700;
     Line-height: 28.8px;
-    color: rgb(255, 255, 255);
+    color: white
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Fragen.css"
-import { FiArrowRight } from "react-icons/fi";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 
 
@@ -12,8 +12,8 @@ return(
             <h1>Fragen zu Vodafone E-Mail & Cloud</h1>
 
             <div className="paragraph">
-                <p><a>Hier findest Du die Antworten </a></p>
-                <FiArrowRight style={{color: "red", fontSize:"40px"}}/>
+                <p>Hier findest Du die Antworten </p>
+                <HiOutlineArrowNarrowRight  style={{color: "red", fontSize:"70px", width:"40"}}/>
 
             </div>
         </div>
