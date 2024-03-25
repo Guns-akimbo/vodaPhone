@@ -44,3 +44,29 @@
     Line-height: 28.8px;
     color: white
 }
+@media (max-width:991px){
+    .fragenWrap{
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 2%;
+    }
+    
+    .fragenWrap h1{
+        Font-size: 28px;
+        Font-weight: 400;
+        Line-height: 37.056px;
+        color: rgb(255, 255, 255);
+    }
+    .paragraph p{
+        Font-size: 14px;
+        Font-weight: 700;
+        Line-height: 28.8px;
+        color: white
+    }
+     
+}

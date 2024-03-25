@@ -114,6 +114,225 @@
     color: rgb(255, 255, 255);
     background-color: #2e2e2e;
 }
+@media (max-width:767px){
+    
+.footerHolder{
+    width: 100%;
+    height: 100vh;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+}
+
+.footerWrap{
+    width: 80%;
+    height: 100%;
+    background-color: #2e2e2e;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10px;
+}
+.topNav{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    /* background-color: green; */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    /* gap: 10px; */
+    margin-top: 2%;
+}
+
+.topLeftNav{
+    width: 80%;
+    height: 70%;
+    background-color:  #2e2e2e;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+.topLeftNav p{
+    background-color: #2e2e2e;
+    color: white;
+    Font-size: 20px;
+    Font-weight: 700;
+    Line-height: 24px;
+}
+.topRightNav{
+    width: 30%;
+    height: 10%;
+    background-color:  #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.downNav{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    /* background-color: green; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    /* gap: 10px; */
+
+}
+
+.leftNav{
+width: 50%;
+height: 20%;
+/* background-color: grey; */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #2e2e2e;
+}
+.leftNav p{
+    background-color: #2e2e2e;
+    Font-size: 20px;
+    Font-weight: 400;
+    Line-height: 24px;
+     color: rgb(255, 255, 255);
+}
+
+.rightNav{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.rightNav p{
+    Font-size: 18px;
+    Font-weight: 500;
+    Line-height: 28px;
+    color: rgb(255, 255, 255);
+    background-color: #2e2e2e;
+}
+
+
+}
+@media  (max-width:991px){
+      
+.footerHolder{
+    width: 100%;
+    height: 100vh;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+}
+
+.footerWrap{
+    width: 80%;
+    height: 100%;
+    background-color: #2e2e2e;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10px;
+}
+.topNav{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    /* background-color: green; */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    /* gap: 10px; */
+    margin-top: 2%;
+}
+
+.topLeftNav{
+    width: 80%;
+    height: 70%;
+    background-color:  #2e2e2e;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+.topLeftNav p{
+    background-color: #2e2e2e;
+    color: white;
+    Font-size: 20px;
+    Font-weight: 700;
+    Line-height: 24px;
+}
+.topRightNav{
+    width: 30%;
+    height: 10%;
+    background-color:  #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.downNav{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    /* background-color: green; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    /* gap: 10px; */
+
+}
+
+.leftNav{
+width: 50%;
+height: 20%;
+/* background-color: grey; */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #2e2e2e;
+}
+.leftNav p{
+    background-color: #2e2e2e;
+    Font-size: 20px;
+    Font-weight: 400;
+    Line-height: 24px;
+     color: rgb(255, 255, 255);
+}
+
+.rightNav{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.rightNav p{
+    Font-size: 18px;
+    Font-weight: 500;
+    Line-height: 28px;
+    color: rgb(255, 255, 255);
+    background-color: #2e2e2e;
+}
+   
+}
 
 
 

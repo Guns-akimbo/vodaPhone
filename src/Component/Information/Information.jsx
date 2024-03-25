@@ -12,7 +12,7 @@ const Information = () => {
         <div className="bigCardLeft ">
           <img src={payment} alt="" />
         </div>
-        <div className="bigCardRight cardContainer">
+        <div className="bigCardRight ">
           <button className="btn-Voda">Vodafone Premium</button>
           <p className="big-p">Werbefrei und mehr Power</p>
           <p className="small-p">
