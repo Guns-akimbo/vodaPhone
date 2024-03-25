@@ -6,7 +6,7 @@ import { IoIosInformationCircle } from "react-icons/io";
 
 const Credentials = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [info, setInfo] = useState(false);
+  const [info, setInfo] = useState(true);
   const [email, setEmail] = useState("");
   const [passWord, setPassWord] = useState("");
 
@@ -102,48 +102,42 @@ const Credentials = () => {
                 placeholder="E-Mail-Adresse"
                 onChange={handleEmail}
               />
-              {inputErrors.emailError ? (
-                <p style={{ fontSize: "10px", color: "red" }}>
-                  {inputErrors.msg}
-                </p>
-              ) : null}
+            
             </div>
             <div className="loginFormDown">
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="E-Mail-Passwort"
                 onChange={handlePassWord}
+
+              
               />
-              {inputErrors.passWordError ? (
-                <p style={{ fontSize: "10px", color: "red" }}>
-                  {inputErrors.msg}
-                </p>
-              ) : null}
-              {showPassword ? (
+          
+              <div>
+  
+              </div>
+       
+            </div>
+            
+     
+              
+
+           
+          </div>
+          <div className="loginFormButton" onClick={handleLogin}>
+          {/* {showPassword ? (
                 <FaRegEye className="Eyeicon"
                   onClick={handleShowpassword}
-                  // style={{
-                  //   fontSize: "12px",
-                  //   color: "white",
-                  //   backgroundColor: "black",
-                  // }}
+               
                 />
               ) : (
                 <FaEyeSlash className="Eyeicon"
                   onClick={handleShowpassword}
-                  // style={{
-                  //   fontSize: "12px",
-                  //   color: "white",
-                  //   backgroundColor: "black",
-                  // }}
+                
                 />
-              )}
-            </div>
-
-            <div className="loginFormButton" onClick={handleLogin}>
+              )} */}
               <button>Login</button>
             </div>
-          </div>
         </div>
 
         <div className="infoBelowLogin">
