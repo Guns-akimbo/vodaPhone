@@ -120,22 +120,22 @@ const Credentials = () => {
                 </p>
               ) : null}
               {showPassword ? (
-                <FaRegEye
+                <FaRegEye className="Eyeicon"
                   onClick={handleShowpassword}
-                  style={{
-                    fontSize: "12px",
-                    color: "white",
-                    backgroundColor: "black",
-                  }}
+                  // style={{
+                  //   fontSize: "12px",
+                  //   color: "white",
+                  //   backgroundColor: "black",
+                  // }}
                 />
               ) : (
-                <FaEyeSlash
+                <FaEyeSlash className="Eyeicon"
                   onClick={handleShowpassword}
-                  style={{
-                    fontSize: "12px",
-                    color: "white",
-                    backgroundColor: "black",
-                  }}
+                  // style={{
+                  //   fontSize: "12px",
+                  //   color: "white",
+                  //   backgroundColor: "black",
+                  // }}
                 />
               )}
             </div>
@@ -157,9 +157,9 @@ const Credentials = () => {
           </div>
 
           <div className="dan">
-            <p>
+            <p className="danp">
               Du hast noch kein E-Mail-Konto?
-              <span
+              <span 
                 style={{
                   color: " rgb(153, 153, 153)",
                   backgroundColor: "#212121",

@@ -22,38 +22,22 @@ const Header = () => {
           </div>
           <div className="headerBodyRight">
             <div className="div">
-              <MdHelpOutline
-                style={{
-                  color: "white",
-                  fontSize: "24",
-                  backgroundColor: "black",
-                }}
+              <MdHelpOutline className="divicon"
+            
               />
             </div>
             <div className="div">
-              <IoMailOutline
-                style={{
-                  color: "white",
-                  fontSize: "24",
-                  backgroundColor: "black",
-                }}
+              <IoMailOutline className="divicon"
+           
               />
             </div>
             <div
-              className="div"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+              className="div1" 
+            
             >
-              <p style={{ backgroundColor: "black", fontSize:"15px" }}>vodafone.de</p>
-              <LuArrowUpRight
-                style={{
-                  color: "white",
-                  fontSize: "30",
-                  backgroundColor: "black",
-                }}
+              <p className="ptext1">vodafone.de</p>
+              <LuArrowUpRight className="divicon1"
+           
               />
             </div>
           </div>

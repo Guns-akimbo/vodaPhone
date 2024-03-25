@@ -74,6 +74,12 @@ span {
 .div {
   background-color: black;
 }
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
 
 .div p {
   color: white;
@@ -98,7 +104,7 @@ span {
 }
 .navBody p {
   font-size: 13px;
-  font-weight: 00;
+  font-weight: 700;
   line-height: 24px;
   color: rgb(250, 248, 248);
 }
@@ -106,4 +112,244 @@ span {
 .pp {
   color: rgb(186, 176, 176);
   font-size: 14px;
+}
+.divicon{
+ font-size: 24px; 
+ color: white;
+ background-color: black;
+}
+.divicon1{
+ font-size: 30px; 
+ color: white;
+ background-color: black;
+}
+.ptext{
+  background-color: black;
+  font-size: 15px;
+
+}
+.ptext1{
+  /* background-color: red; */
+  color: white;
+  font-size: 15px;
+
+}
+@media (max-width:767px){
+  .headerBody {
+    width: 100%;
+    height:7vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerBodyWrapper {
+    width: 90%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerBodyLeftt {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    /* background-color: blue; */
+  }
+  .headerBodyLeftt p {
+  display: none;
+  }
+  .headerBodyRight {
+    width: 60%;
+    height: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 8%;
+    /* background-color: yellow; */
+  }
+  .div {
+    width: 15%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    /* background-color: red; */
+  }
+  .div1 {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    /* background-color: red; */
+  }
+  .divicon{
+  font-size: 33px;
+  }
+  .divicon1{
+    font-size: 45px; 
+    color: white;
+    background-color: black;
+   }
+  .ptext{
+    height: 70%;
+    width: 100%;
+    /* background-color: red; */
+   /* font-size: 50px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .ptext1{
+    height: 10%;
+    width: 100%;
+    /* background-color: red; */
+   font-size: 17px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .nav {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    background-color: #212121;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBody {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+    gap: 10px;
+  }
+  .pp {
+    color: rgb(186, 176, 176);
+    font-size: 16px;
+  }
+  .navBody p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(250, 248, 248);
+  }
+  
+}
+@media (max-width:991px){
+  .headerBody {
+    width: 100%;
+    height:7vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerBodyWrapper {
+    width: 90%;
+    height: 100%;
+    /* background-color: black; */
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerBodyLeftt {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    /* background-color: blue; */
+  }
+  .headerBodyLeftt p {
+  display: none;
+  /* color: blue; */
+  }
+  .headerBodyRight {
+    width: 60%;
+    height: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 8%;
+    /* background-color: yellow; */
+  }
+  .div {
+    width: 15%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    /* background-color: red; */
+  }
+  .div1 {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    /* background-color: red; */
+  }
+  .divicon{
+  font-size: 32px;
+  }
+  .divicon1{
+    font-size: 43px; 
+    color: white;
+    background-color: black;
+   }
+  .ptext{
+    height: 70%;
+    width: 100%;
+    /* background-color: red; */
+   /* font-size: 50px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .ptext1{
+    height: 10%;
+    width: 100%;
+    /* background-color: red; */
+   font-size: 17px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .nav {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    background-color: #212121;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBody {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+    gap: 10px;
+  }
+  .pp {
+    color: rgb(186, 176, 176);
+    font-size: 15px;
+  }
+  .navBody p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(250, 248, 248);
+  }
 }
