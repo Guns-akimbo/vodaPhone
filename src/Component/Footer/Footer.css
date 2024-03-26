@@ -271,13 +271,14 @@ background-color: #2e2e2e;
 .topLeftNav p{
     background-color: #2e2e2e;
     color: white;
-    Font-size: 20px;
+    Font-size: 15px;
     Font-weight: 700;
     Line-height: 24px;
 }
 .topRightNav{
-    width: 30%;
+    width: 50%;
     height: 10%;
+    /* background-color: yellow; */
     background-color:  #2e2e2e;
     display: flex;
     justify-content: space-between;
@@ -308,7 +309,7 @@ background-color: #2e2e2e;
 }
 .leftNav p{
     background-color: #2e2e2e;
-    Font-size: 20px;
+    Font-size: 15px;
     Font-weight: 400;
     Line-height: 24px;
      color: rgb(255, 255, 255);
@@ -325,7 +326,7 @@ background-color: #2e2e2e;
 
 }
 .rightNav p{
-    Font-size: 18px;
+    Font-size: 15px;
     Font-weight: 500;
     Line-height: 28px;
     color: rgb(255, 255, 255);

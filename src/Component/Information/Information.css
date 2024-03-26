@@ -246,7 +246,7 @@
     font-weight: 900;
   }
   .big-p {
-    font-size: 20px;
+    font-size: 15px;
     margin: 5px 0px 5px 0px;
     font-weight: 400;
     background-color: #000000;
@@ -263,5 +263,26 @@
     font-weight: 400;
     line-height: 18px;
     color: rgb(153, 153, 153);
+  }
+  .strokedText {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 14px;
+    color: rgb(235, 0, 0);
+    display: flex;
+    align-self: flex-end;
+    text-decoration: line-through;
+    background-color: #000000;
+  }
+  .monatlich {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #000000;
+  }
+  .secondSpan {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 51px;
+    background-color: #000000;
   }
 }
